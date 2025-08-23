@@ -1,0 +1,5 @@
+https://docs.python.org/es/3.10/library/random.html
+implementa generadores de números pseudoaleatorios para varias distribuciones.
+No se necesita instalar, solo importarlo. 
+
+import random
