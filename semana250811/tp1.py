@@ -184,3 +184,17 @@ while True:
     elif intentos > 5:
         print("No ha podido acceder a su cuenta. Intentelo mas tarde.")
         break
+
+print("\n")
+print("\n\n")
+print("-----Ejercicio 4-------")
+print("/n/n")
+# Ejercicio 4 
+# generen una lista con al menos 7 palabras y a continuación implementen un 
+# script que pueda detectar cuantas de esas palabras son palíndromos y cuál es 
+# el palíndromo con más caracteres.
+
+print("Detectar palíndromos en una lista")
+print("\n")
+print("Definicion de palindromo de la Real Academia Española: \n Palabra o frase cuyas letras están dispuestas de tal manera que resulta la misma leída de izquierda a derecha que de derecha a izquierda; por ejemplo, anilina; dábale arroz a la zorra el abad.")
+print("\n")
