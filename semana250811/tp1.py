@@ -444,4 +444,36 @@ print(f"el promedio total: {promio_sum}")
 
 print("\n")
 print("\n")
-print("---- Version usando acumulador")
+print("---- Version usando acumulador-----")
+
+num_ejer6_acuCont = []  # Creo lista vacía
+
+print("Ingrese números enteros positivos. Escriba 'Fin' para terminar.")
+
+while True:
+    n_ej6 = input("Ingrese un número (o 'Fin' para salir): ")
+
+    if n_ej6.lower() == "fin":
+        print("Ingreso finalizado.\n")
+        break
+
+    if n_ej6.isdigit():
+        numero = int(n_ej6)
+        num_ejer6_acuCont.append(numero)
+        print(f"Números ingresados hasta ahora: {num_ejer6_acuCont}\n")
+    else:
+        print("Entrada inválida. Ingrese un número entero positivo o 'Fin'.\n")
+
+# Calcular promedio con acumulador y contador manual
+if num_ejer6_acuCont:
+    suma_acu = 0
+    contador = 0
+    for pr_acu in num_ejer6_acuCont:
+        suma_acu += pr_acu
+        contador += 1
+    promedio_con = suma_acu / contador
+
+    print(f"Lista completa de números: {num_ejer6_acuCont}")
+    print(f"Promedio calculado manualmente: {promedio_con}")
+else:
+    print("No se ingresaron números. No se puede calcular el promedio.")
