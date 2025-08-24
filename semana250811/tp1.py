@@ -252,7 +252,7 @@ else:
 
 print("\n")
 print("\n")
-print("Version 3")
+print("----Version 3-----")
 #version con lista
 print("\n")
 def es_palindromo_lista(palabra):
@@ -278,3 +278,30 @@ else:
     print("No es un palíndromo")
 print("\n")
 print("\n")
+print("-------Version 4 ----------")
+print("\n")
+#importo numpy
+import numpy as np
+
+def es_palindromo_array(palabra): #quitar tildes y mayusculas
+    palabra = palabra.lower().replace(" ", "")
+    palabra = palabra.replace("á", "a").replace("é", "e").replace("í", "i")
+    palabra = palabra.replace("ó", "o").replace("ú", "u")
+
+    # Convertir a array de caracteres
+    array_letras = np.array(list(palabra))  #version con array son mas utiles con operaciones largas
+
+    # Comparar con el array invertido
+    if np.array_equal(array_letras, array_letras[::-1]):  #si el array es igual al derecho y al reves
+        return True
+    else:
+        return False
+
+
+texto = input("Ingrese una palabra o frase: ")
+if es_palindromo_array(texto):
+    print("Es un palíndromo (usando arrays)")
+else:
+    print("No es un palíndromo")
+
+    
