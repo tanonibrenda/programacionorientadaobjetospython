@@ -198,3 +198,83 @@ print("Detectar palíndromos en una lista")
 print("\n")
 print("Definicion de palindromo de la Real Academia Española: \n Palabra o frase cuyas letras están dispuestas de tal manera que resulta la misma leída de izquierda a derecha que de derecha a izquierda; por ejemplo, anilina; dábale arroz a la zorra el abad.")
 print("\n")
+# ejemplos de palindromos: arenera, erre, ana, rodador, salas
+
+print(" Version 1")
+print("\n")
+word = input("ingrese una palabra: ")
+
+def palindromo(word):
+    reverse = str(word).lower().replace(' ', ' '  )   #cadenas van a ser minuscula
+    print(reverse, reverse[::-1])
+    if reverse == reverse[::-1]: # [::-1] se invierte la cadena y quita los espacios vacios
+        return True
+    else:
+        return False
+
+print(palindromo(word))
+
+# Version 2
+print("\n")
+print("\n")
+print("---- Version 2 de ejercicio 4")
+print("\n")
+def es_palindromo(palabra):
+    # Normalizar: pasar a minúsculas y eliminar espacios
+    palabra = palabra.lower()
+    palabra = palabra.replace(' ', '')
+
+    # Reemplazo de tildes
+    palabra = palabra.replace("á", "a")
+    palabra = palabra.replace("é", "e")
+    palabra = palabra.replace("í", "i")
+    palabra = palabra.replace("ó", "o")
+    palabra = palabra.replace("ú", "u")
+
+    # Comparación desde los extremos hacia el centro
+    a = 0
+    b = len(palabra) - 1
+
+    for i in range(len(palabra) // 2):  # solo hasta la mitad, sino sigue
+        if palabra[a] != palabra[b]:
+            return False
+        a += 1
+        b -= 1
+
+    return True
+
+# Bloque principal
+palabra = input("Ingrese una palabra o frase: ")
+if es_palindromo(palabra):
+    print("Es un palíndromo")
+else:
+    print("No es un palíndromo")
+
+print("\n")
+print("\n")
+print("Version 3")
+#version con lista
+print("\n")
+def es_palindromo_lista(palabra):
+    # Normalizar: minúsculas, sin espacios ni tildes un poco mas corto de codigo
+    palabra = palabra.lower().replace(" ", "")
+    palabra = palabra.replace("á", "a").replace("é", "e").replace("í", "i")
+    palabra = palabra.replace("ó", "o").replace("ú", "u")
+
+    # Convertir a lista de caracteres
+    lista_letras = list(palabra)
+
+    # Comparar con la lista invertida
+    if lista_letras == lista_letras[::-1]:   #compara el espejo
+        return True
+    else:
+        return False
+
+
+texto = input("Ingrese una palabra o frase: ")
+if es_palindromo_lista(texto):
+    print("Es un palíndromo (usando listas)")
+else:
+    print("No es un palíndromo")
+print("\n")
+print("\n")
