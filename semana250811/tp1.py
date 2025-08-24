@@ -304,4 +304,44 @@ if es_palindromo_array(texto):
 else:
     print("No es un palíndromo")
 
-    
+# Version 5 con todo el enunciado
+print("\n")
+print("-------Version 5 con todo el enunciado ----------")
+print("\n")
+print("Generar una lista con al menos 7 palabras y detectar cuantas de esas palabras son palíndromos y cuál es el palíndromo con más caracteres."
+      )
+lista_palabras = ["anilina", "erre", "radar", "rodador", "salas", "python", "reconocer", "arenera", "palindromo"]
+print("Lista de palabras:", lista_palabras)
+print("\n")
+
+def sacartilde(parola):
+    parola = parola.lower().replace(" ", "")
+    reemplazos = {"á": "a", "é": "e", "í": "i", "ó": "o", "ú": "u"}
+    for original, reemplazo in reemplazos.items():
+        parola = parola.replace(original, reemplazo)
+    return parola
+
+def un_palindroma(parola):
+    parola_normale = sacartilde(parola)
+    return parola_normale == parola_normale[::-1]
+
+# Detectar palíndromos
+ultimopalindromo = [p for p in lista_palabras if un_palindroma(p)]
+
+print(f"La cantidad de palíndromos encontrados en la lista: {len(ultimopalindromo)}")
+print("Son palíndromos de la lista:")
+for p in ultimopalindromo:
+    print(f"- {p}")
+
+# Función para encontrar el palíndromo más largo
+def palindromo_mas_largo(lista):
+    elveres = [p for p in lista if un_palindroma(p)]
+    if not elveres:
+        return None
+    return max(elveres, key=lambda x: len(sacartilde(x)))
+
+resultado = palindromo_mas_largo(lista_palabras)
+if resultado:
+    print(f"\n El palíndromo más largo es: '{resultado}' con {len(sacartilde(resultado))} caracteres (sin espacios ni tildes)")
+else:
+    print(" No se encontraron palíndromos.")
