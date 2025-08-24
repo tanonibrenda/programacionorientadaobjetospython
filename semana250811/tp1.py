@@ -408,3 +408,40 @@ def salta_con_while(parametros):
 secuencia = salta_con_while(parametros_ejercicio5)
 print(f" Los valores entre {valorInicial} y {valorFinal}, saltando de {salto} en {salto}, son:")
 print(secuencia)
+
+print("\n")
+print("-------Ejercicio 6-------")
+#Ejercicio 6 
+#Implementar un programa que permita ingresar valores enteros positivos. El 
+#ingreso termina cuando el usuario no desee ingresar más valores, para lo cual 
+#se deberá definir un criterio que indique esta decisión. Luego deberá calcular y 
+#mostrar el promedio, la cantidad de valores ingresados, el mayor y menor valor.
+
+print("Calcular promedio, cantidad de valores, mayor y menor valor de una lista de numeros enteros positivos")
+
+print("\n")
+print("A continuacion, podra ingresar varios numeros. La condicion es que deben ser enteros positivos (desde el 1, sin comas). Cuando no desee ingresar mas numeros escriba la palabra fin")
+print()
+print("---version usando operador sum")
+num_ejer6 = []  # Creo lista vacía para calcular promedio con suma
+
+while True:
+    n_ej6 = input("Ingrese un número. Si desea terminar, escriba 'Fin': ")
+
+    if n_ej6.lower() == "fin":  # Ignora mayúsculas/minúsculas
+        break
+        print(" Ingreso finalizado.")
+
+    if n_ej6.isdigit():  # Verifica si es un número entero positivo
+        numero = int(n_ej6)
+        num_ejer6.append(numero)  # Agrega el número a la lista
+        promio_sum = sum(num_ejer6) / len(num_ejer6)
+
+    else:
+        print("Por favor, ingrese un número entero positivo o escriba 'Fin' para salir.\n")
+print(f"Lista completa de números: {num_ejer6}")
+print(f"el promedio total: {promio_sum}")
+
+print("\n")
+print("\n")
+print("---- Version usando acumulador")
