@@ -140,7 +140,7 @@ def validar_password1(password1):
     return False
 
 if __name__ == "__main__":
-      password1 = input("Ingrese su contraseña: ")
+      password1 = input("Ahora va a generar una contraseña, debe tener al menos 6 caracteres, una mayuscula, una minucula, un numero y un caracter especial.Ingrese su contraseña: ")
       validar_password1(password1)
 
 print("Opcion 2 con no cumple las condiciones con elif")
@@ -165,5 +165,22 @@ def validar_password2(password2):
     return False
 
 if __name__ == "__main__":
-      password2 = input("Ingrese su contraseña de otra version: ")
+      password2 = input("Ahora va a generar una contraseña,\n debe tener al menos 6 caracteres,\n una mayuscula, \nuna minucula, \nun numero y un caracter especial.\nIngrese su contraseña: ")
       validar_password2(password2)
+
+print("\n")
+print("\n\n")
+print("ahora con bucle")
+
+intentos = 0  # inicializo la cantidad de intentos
+
+while True:
+    password_input = input("Introduce la contraseña para el primer bucle: ")
+    intentos += 1
+
+    if validar_password1(password_input):
+        print(f"La contraseña introducida ha sido: {password_input}")
+        break
+    elif intentos > 5:
+        print("No ha podido acceder a su cuenta. Intentelo mas tarde.")
+        break
