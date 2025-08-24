@@ -345,3 +345,66 @@ if resultado:
     print(f"\n El palíndromo más largo es: '{resultado}' con {len(sacartilde(resultado))} caracteres (sin espacios ni tildes)")
 else:
     print(" No se encontraron palíndromos.")
+
+#Ejercicio 5 
+# Implementar un programa que permita al usuario ingresar tres valores: 
+# valorInicial, valorFinal y salto. En base a esos tres valores, mostrar la lista de 
+# todos los números a partir de valorInicial de salto en salto hasta valorFinal. 
+# Resolver el ejercicio utilizando la estructura de control for y luego la estructura 
+# de control while. Ejemplo: si valorInicial = 10, valorFinal = 30 y salto = 5, se 
+# deberán mostrar los números “a partir de 10, de 5 en 5 hasta llegar a 20”, es 
+# decir: 10, 15, 20, 25, 30. 
+
+print("-------Ejercicio 5-------")
+print("\n")
+print("Generar una lista de numeros desde un valor inicial a un valor final con un salto determinado")
+
+print("Ahora va a ingresar los 3 valores deseados")
+valorInicial = int(input("Ingrese el valor inicial: "))
+valorFinal = int(input("Ingrese el valor final: "))
+salto = int(input("Ingrese el salto: "))
+
+# Convertir los valores en una lista
+parametros_ejercicio5 = [valorInicial, valorFinal, salto]
+print(f"Parámetros ingresados: {parametros_ejercicio5}") #para ver si pude crear bien la lista
+print("\nOpción de ejercicio con for")
+
+# Función que genera la secuencia
+def salta_con_for(parametros):
+    inicio, fin, paso = parametros   #Python tomo valorInicial=inicio, valorFinal=fin, salto=paso, por el orden en que fueron ingresados
+    resultado_con_for = []
+    for x in range(inicio, fin + 1, paso):  #fin +1 es el limite superior
+        resultado_con_for.append(x)   #guarda en x como variable en la iteracion
+    return resultado_con_for
+
+# Mostrar el resultado
+secuencia = salta_con_for(parametros_ejercicio5)
+print(f"Los valores entre {valorInicial} y {valorFinal}, saltando de {salto} en {salto}, son:")
+print(secuencia)
+
+print("\nOpción de ejercicio con while")
+print("Ahora va a ingresar los 3 valores deseados")
+valorInicial = int(input("Ingrese el valor inicial: "))
+valorFinal = int(input("Ingrese el valor final: "))
+salto = int(input("Ingrese el salto: "))
+
+# Convertir los valores en una lista
+parametros_ejercicio5 = [valorInicial, valorFinal, salto]
+print(f"Parámetros ingresados: {parametros_ejercicio5}")
+print("\n Opción de ejercicio con while")
+
+def salta_con_while(parametros):
+    inicio, fin, paso = parametros #
+    resultado_con_while = []  # guardo en una lista los resultaso para iterar
+    indice_while = inicio #inicializo la funcion en el valor inicial quepone el usuario
+
+    while indice_while <= fin: #se hace hasta llegar al valor final elegido por el usuario
+        resultado_con_while.append(indice_while) #agrego a la lista el valor actual de indice_while
+        indice_while += paso #incremento el valor de indice_while en el salto elegido por el usuario
+
+    return resultado_con_while
+
+# Mostrar resultado
+secuencia = salta_con_while(parametros_ejercicio5)
+print(f" Los valores entre {valorInicial} y {valorFinal}, saltando de {salto} en {salto}, son:")
+print(secuencia)
