@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.2">
+  <diagram name="Página-1" id="aaNJGSmfK74IRTPEsp5f">
+    <mxGraphModel dx="786" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Bg9ILrIBO0yJCQrcidhW-1" value="Monitor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="210" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="Bg9ILrIBO0yJCQrcidhW-2" value="+ _marca: str&lt;div&gt;+ _tamanio: float&lt;/div&gt;&lt;div&gt;+_tipoPantalla: str&lt;/div&gt;&lt;div&gt;+_tipoConexion: str&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Bg9ILrIBO0yJCQrcidhW-1">
+          <mxGeometry y="26" width="210" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Bg9ILrIBO0yJCQrcidhW-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Bg9ILrIBO0yJCQrcidhW-1">
+          <mxGeometry y="90" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Bg9ILrIBO0yJCQrcidhW-4" value="&lt;div&gt;+ __init__(marca:str, tamanio: float, tipoPantalla:str, tipoConexion: str)&lt;/div&gt;+ getTamanio():&amp;nbsp; float&lt;div&gt;+ setTamanio(tamanio: float)&lt;/div&gt;&lt;div&gt;+ getMarca: str&lt;/div&gt;&lt;div&gt;+ setMarca(marca: str)&lt;/div&gt;&lt;div&gt;+ getTipoPantalla: str&lt;/div&gt;&lt;div&gt;+ setTipoPantalla(tipoPantalla:str)&lt;/div&gt;&lt;div&gt;+ getTipoConexion: str&lt;/div&gt;&lt;div&gt;+ setTipoConexion(tipoConexion:str)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Bg9ILrIBO0yJCQrcidhW-1">
+          <mxGeometry y="98" width="210" height="192" as="geometry" />
+        </mxCell>
+        <mxCell id="Bg9ILrIBO0yJCQrcidhW-6" value="Teclado" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="270" y="100" width="200" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Bg9ILrIBO0yJCQrcidhW-7" value="+ _marca: str&lt;div&gt;+ _lenguaje: str&lt;/div&gt;&lt;div&gt;+ _incluyeNum: bool&lt;/div&gt;&lt;div&gt;+ _tieneRetroLuz: bool&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Bg9ILrIBO0yJCQrcidhW-6">
+          <mxGeometry y="26" width="200" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Bg9ILrIBO0yJCQrcidhW-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Bg9ILrIBO0yJCQrcidhW-6">
+          <mxGeometry y="90" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Bg9ILrIBO0yJCQrcidhW-9" value="&lt;div&gt;+ __init__(marca:str, lenguaje: str, incluyeNum: bool, tieneRetroLuz: bool)&lt;/div&gt;+ getMarca(): str&lt;div&gt;+ setMarca(marca: str)&lt;/div&gt;&lt;div&gt;+ getLenaguaje(): str&lt;/div&gt;&lt;div&gt;+ setLenguaje(lenguaje:str)&lt;/div&gt;&lt;div&gt;+ getIncluyeNum():bool&lt;/div&gt;&lt;div&gt;+ setIncluyeNum(incluyeNum:bool)&lt;/div&gt;&lt;div&gt;+ getTieneRetroLuz():bool&lt;/div&gt;&lt;div&gt;+ setTieneRetroLuz(tieneRetroLuz: bool)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Bg9ILrIBO0yJCQrcidhW-6">
+          <mxGeometry y="98" width="200" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="Bg9ILrIBO0yJCQrcidhW-10" value="Mouse" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+          <mxGeometry x="500" y="100" width="270" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Bg9ILrIBO0yJCQrcidhW-11" value="+&amp;nbsp; _marca: str&lt;div&gt;+ _inalambrico: bool&lt;/div&gt;&lt;div&gt;+ _dpl: str&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Bg9ILrIBO0yJCQrcidhW-10">
+          <mxGeometry y="26" width="270" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="Bg9ILrIBO0yJCQrcidhW-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Bg9ILrIBO0yJCQrcidhW-10">
+          <mxGeometry y="110" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Bg9ILrIBO0yJCQrcidhW-13" value="+ __init__(marca: str, inalambrico: boo, dpl: str)&lt;div&gt;+ getMarca(): str&lt;div&gt;+ setMarca(marca: str)&lt;/div&gt;&lt;/div&gt;&lt;div&gt;+ getInalambrico(): bool&lt;/div&gt;&lt;div&gt;+ setInalambrico(inalambrico:bool)&lt;/div&gt;&lt;div&gt;+ getDpl(): str&lt;/div&gt;&lt;div&gt;+ setDpl(dpl:str)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Bg9ILrIBO0yJCQrcidhW-10">
+          <mxGeometry y="118" width="270" height="142" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

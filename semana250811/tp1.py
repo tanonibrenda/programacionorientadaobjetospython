@@ -372,6 +372,25 @@ if resultado:
 else:
     print(" No se encontraron palíndromos.")
 
+
+######################################################################
+# version de clase
+# 1º crear la función que detecta si es palíndromo
+def es_palindromo(palabra):
+    return palabra == palabra[::-1]
+def analizar_palindromos(lista):
+    palindromos = []
+    palindromo_mas_largo = ""   # inicializo variable para guardar el palindromo mas largo
+    for palabra in lista:
+        if es_palindromo(palabra):
+            palindromos.append(palabra)
+            if (len(palabra) > len(palindromo_mas_largo)):  # si la palabra actual es mas larga que la guardada
+                palindromo_mas_largo = palabra
+    cantidad_palindromos = len(palindromos)
+    return palindromos
+
+
+
 # Ejercicio 5
 # Implementar un programa que permita al usuario ingresar tres valores: 
 # valorInicial, valorFinal y salto. En base a esos tres valores, mostrar la lista de 
@@ -608,3 +627,93 @@ rta8b = menos_ent_positivo()
 
 print(f"Lista sin el último entero positivo: {rta8b}")
 
+# Ejercicio 9 
+# a) Implementar una función contieneCifra(numero, cifra), que devuelva un valor 
+# booleano indicando si la cifra aparece en el numero dado. 
+# b) Implementar una función contarCifra(numero, cifra), que devuelva la 
+# cantidad de veces que aparece la cifra en el número. 
+# Ejemplos: 
+# a = contieneCifra(1810, 8) # True, porque 1810 contiene al menos un 8 
+# b = contarCifra(1810, 1) # 2, porque 1810 contiene dos unos.
+
+
+
+# Ejercicio 10
+# a) Implementar una función de devuelva el mayor de dos números reales.
+# b) Utilizando la solución del inciso anterior, implementar una función que
+# devuelva el mayor de tres números reales.
+
+print("-------Ejercicio 10-------")
+print("\n")
+print("Funciones para devolver el mayor de dos o tres números reales")
+
+
+def leer_num_reales():
+    num1 = float(input("Ingrese el primer número real: "))
+    num2 = float(input("Ingrese el segundo número real: "))
+
+    if num1 > num2:
+        return num1
+    else:
+        return num2
+
+
+# Llamada a la función y almacenamiento del resultado
+ejercicio10 = leer_num_reales()
+print(f"El número mayor es {ejercicio10}")
+
+## Error en la parte b
+# def leer_num_reales():
+#     num1 = float(input("Ingrese el primer número real: "))
+#     num2 = float(input("Ingrese el segundo número real: "))
+    
+#     if num1 > num2:
+#         return num1
+#     else:
+#         return num2
+
+# # Llamada a la función y almacenamiento del resultado
+# ejercicio10 = leer_num_reales()
+# print(f"El número mayor es {ejercicio10}")
+
+# print("parte b: usar el punto a y compararlo con un tercer numero")
+
+# def tercer_num():
+#   num3 = float(input("Ingrese el tercer numero"))
+
+#     if num3>ejercicio10():
+#       return True
+#     else:
+#       False
+# ptobej10 = tercer_num
+# print(f"El mayor de todos es {ptobej10}")
+
+# Parte A: Leer dos números reales y devolver el mayor
+def leer_num_reales():
+    num1 = float(input("Ingrese el primer número real: "))
+    num2 = float(input("Ingrese el segundo número real: "))
+
+    if num1 > num2:
+        return num1
+    else:
+        return num2
+
+
+# Guardamos el resultado de la comparación
+ejercicio10 = leer_num_reales()
+print(f"El número mayor entre los dos primeros es: {ejercicio10}")
+
+
+# Parte B: Comparar ese número con un tercer número
+def tercer_num(mayor_anterior):
+    num3 = float(input("Ingrese el tercer número real: "))
+
+    if num3 > mayor_anterior:
+        return num3
+    else:
+        return mayor_anterior
+
+
+# Llamamos a la función pasando el resultado anterior
+ptobej10 = tercer_num(ejercicio10)
+print(f"El mayor de todos los números ingresados es: {ptobej10}")

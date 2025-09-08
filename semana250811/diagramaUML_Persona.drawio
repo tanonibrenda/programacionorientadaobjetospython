@@ -1,0 +1,34 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="Página-1" id="JKgM0ArkdYIHNsXVidKd">
+    <mxGraphModel dx="647" dy="453" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#fafafa, #121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CTlzWmCd6pywYaMfCgd2-9" value="Persona" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="110" width="240" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="CTlzWmCd6pywYaMfCgd2-10" value="- edad: int&lt;br&gt;- nombre: str&lt;div&gt;- saldo : float = 0&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CTlzWmCd6pywYaMfCgd2-9">
+          <mxGeometry y="26" width="240" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="CTlzWmCd6pywYaMfCgd2-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="CTlzWmCd6pywYaMfCgd2-9">
+          <mxGeometry y="80" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="CTlzWmCd6pywYaMfCgd2-12" value="+ __init__( edad: int , nombre: str )&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getEdad(): int&lt;br&gt;+ getNombre(): str&lt;/div&gt;&lt;div&gt;+ getSaldo(): float&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ setEdad( nuevaEdad: int )&lt;/div&gt;&lt;div&gt;+ setNombre( nuevoNombre: str )&lt;/div&gt;&lt;div&gt;+ setSaldo( nuevoSaldo: float )&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ cumplirAnios( )&lt;/div&gt;&lt;div&gt;+ ingresarDinero( monto: float )&lt;/div&gt;&lt;div&gt;+ retirarDinero( monto: float ) : bool&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CTlzWmCd6pywYaMfCgd2-9">
+          <mxGeometry y="88" width="240" height="222" as="geometry" />
+        </mxCell>
+        <mxCell id="CTlzWmCd6pywYaMfCgd2-13" value="saldo es un atributo que modela mis ahorros en una billetera virtual.&amp;nbsp;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="450" y="120" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CTlzWmCd6pywYaMfCgd2-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.997;entryY=0.651;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="CTlzWmCd6pywYaMfCgd2-13" target="CTlzWmCd6pywYaMfCgd2-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CTlzWmCd6pywYaMfCgd2-15" value="True, representa una extraccion exitosa, y False, lo contrario." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="460" y="340" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CTlzWmCd6pywYaMfCgd2-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.988;entryY=0.85;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="CTlzWmCd6pywYaMfCgd2-15" target="CTlzWmCd6pywYaMfCgd2-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
