@@ -24,6 +24,7 @@ class CuentaBancaria:
     def modificarTitular(self):
         ingreso = input("Ingrese su nombre actual como titular: ")
         if ingreso == self.titular:
+            print("El nombre ingresado es el correcto")
             nuevo_nombre = input("Ingrese el nuevo nombre de titular: ")
             self.titular = nuevo_nombre
             print("El nuevo titular es:", self.titular)
