@@ -10,7 +10,12 @@ cliente0001 = CuentaBancaria(
 
 print("Se ha creado una nueva cuenta bancaria")
 print("Bienvenido", cliente0001.titular)
+print(" Personalisemos su cuenta")
+print(" Validemos sus datos para continuar")
+print("·······")
+print("Comencemos: ", cliente0001.autentificar())
+
 print("Ahora cambiemos el nombre del titular")
 ingreso = input("Ingrese el nombre titular actual: ")
-print("Ingresaste:", ingreso)
+#print("Ingresaste:", ingreso)
 cliente0001.modificarTitular()

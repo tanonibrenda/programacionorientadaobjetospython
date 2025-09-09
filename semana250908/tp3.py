@@ -21,6 +21,20 @@ class CuentaBancaria:
 
     #metodos de modificacio de titular y clave (con restricciones)
 
+    #para esto vamos a autentificar al cliente
+    def autentificar(self):
+        validarNombre = input("Ingrese el nombre del titular: ")
+        if validarNombre == self.titular:
+            validarClave = input("Ingrese su clave: ")
+            if validarClave == self.clave:
+                self.autentificado = True
+                print("Usuario validado correctamente.")
+            else:
+                print("Clave incorrecta.")
+        else:
+            print("Titular ingresado incorrecto.")
+
+
     def modificarTitular(self):
         ingreso = input("Ingrese su nombre actual como titular: ")
         if ingreso == self.titular:
