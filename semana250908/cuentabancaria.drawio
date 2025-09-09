@@ -1,0 +1,22 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.2">
+  <diagram name="Página-1" id="mC2W6cxkKkP5XEqqKgah">
+    <mxGraphModel dx="786" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d40nBDcXI705nebuhOcE-1" value="CuentaBancaria" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="190" width="260" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="d40nBDcXI705nebuhOcE-2" value="-numeroCuenta: str&lt;div&gt;-titular: str&lt;/div&gt;&lt;div&gt;-saldo: float&lt;/div&gt;&lt;div&gt;-clave: str&lt;/div&gt;&lt;div&gt;-autentificado: bool&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="d40nBDcXI705nebuhOcE-1">
+          <mxGeometry y="26" width="260" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="d40nBDcXI705nebuhOcE-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="d40nBDcXI705nebuhOcE-1">
+          <mxGeometry y="120" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="d40nBDcXI705nebuhOcE-4" value="&lt;div&gt;·· Constructor··&amp;nbsp;&lt;/div&gt;&lt;div&gt;__init__(numeroCuento:str, titular: str,&amp;nbsp; clave: str&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;·· Metodo Consulta··&lt;/div&gt;&lt;div&gt;+getNumeroCuenta():str&lt;/div&gt;&lt;div&gt;+getTitular(): str&lt;/div&gt;&lt;div&gt;+ getClave():str&lt;/div&gt;&lt;div&gt;+getSaldo(): float&lt;/div&gt;&lt;div&gt;+getAutentificado():bool&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;··Metodo de Modificacion··&lt;/div&gt;&lt;div&gt;setTitular(titular: str)&lt;/div&gt;&lt;div&gt;setClave(clave: str)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;·· Metodos Operacionales ··&lt;/div&gt;+ deposito(monto): float&lt;div&gt;+ extraer(monto): float&lt;/div&gt;&lt;div&gt;+ consultarSaldo():foat&lt;/div&gt;&lt;div&gt;+ cambiarClave(clave): str&lt;/div&gt;&lt;div&gt;+ ingresarClave(clave): str&lt;/div&gt;&lt;div&gt;+ cerrarSesion(): bool&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;·· Metodos Avanzados··&lt;/div&gt;&lt;div&gt;+ registrarOperacion(tipo: str, monto:float)&lt;/div&gt;&lt;div&gt;+ mostrarHistorial()&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="d40nBDcXI705nebuhOcE-1">
+          <mxGeometry y="128" width="260" height="382" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
