@@ -32,10 +32,13 @@ class CuentaBancaria:
             if validarClave == self._clave:
                 self._autentificado = True
                 print("Usuario validado correctamente.")
+                return True
             else:
                 print("Clave incorrecta.")
+                return False
         else:
             print("Titular ingresado incorrecto.")
+            return False
 
 
     def modificarTitular(self):
@@ -47,8 +50,27 @@ class CuentaBancaria:
             if nuevo_nombre.isalpha():
                 self._titular = nuevo_nombre
                 print(" El nuevo titular es:", self._titular)
+                return True
             else:
                 print("El nombre solo debe contener letras")
         else:
             print(" No se pudo modificar el titular. Autenticación fallida.")
+            return False
+
+    def modificarClave(self):
+        self.autentificar()
+        if self._autentificado:
+            nueva_clave = input(" Ingrese su nueva Clave: ")
+            if nueva_clave.isdigit() and len(nueva_clave) == 4:
+                self._clave = nueva_clave
+                print("Clave modificada correctamente")
+            else:
+                print("la clave debe contener 4 digitos y solo numeros")
+        else:
+            print("no ha podido modificar su clave")
+
+    def cerrarSesion(self):
+        if not self._autentificado:
+            print("Lo sentimos. Cerraremos la operacion, vuelva a intentarlo màs tarde ")
+
 

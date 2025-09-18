@@ -18,3 +18,5 @@ cliente0001.autentificar()
 print("Ahora cambiemos el nombre del titular")
 cliente0001.modificarTitular()
 
+print("Ahora cambiemos su clave")
+cliente0001.modificarClave()
